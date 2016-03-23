@@ -1,12 +1,16 @@
+/* General Styles */
+
 html {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
 body {
+    display: block;
     background-color: LightGray;
 }
 div {
@@ -21,7 +25,11 @@ letter-spacing: 0.03em;
 -webkit-font-smoothing: antialiased;
 }
 
-a {
+/* Link Styles */
+
+a:link, 
+a:visited {
+	color: #838994;
 	text-decoration: none;
 }
 
@@ -31,31 +39,67 @@ a:hover {
 }
 
 /* Navigation Section */
+
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	z-index: 9999;
 }
 
 .top-navigation > .content {
-	width: 970px;
-	height: 70px;
+	width: 60%;
+	height: 4.375rem;
 	margin: 0 auto;
 	padding: 0px 15px
+}
+
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
 }
 
 #logo {
 	height: 70px;
 }
 
-.links {
+.top-navigation .links {
 	float: right;
+	color: #838994;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
 }
 
 .top-navigation .links li {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 1.563rem;
 }
 
-.top-navigation .links > .active {
-	color: #4c5058;
+.top-navigation .links li.active {
+    color: #4c5058;
     font-weight: 500;
+}
+
+.introduction {
+	background-image: url(../images/first-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+	display: block;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+
+.introduction h1, 
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
 }
