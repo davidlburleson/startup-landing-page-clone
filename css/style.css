@@ -13,9 +13,6 @@ body {
     display: block;
     background-color: #fff;
 }
-div {
-    border: 1px solid Chocolate;
-}
 
 body {
 font-family: 'Roboto', sans-serif;
@@ -119,7 +116,6 @@ button {
 }
 
 .content {
-	margin-top: 7.875rem;
 	color: #1d1e21;
 	text-align: center;
 	font: inherit;
@@ -127,6 +123,7 @@ button {
 
 .cases {
 	padding-bottom: 5rem;
+	overflow: auto;
 }
 
 .cases h2 {
@@ -138,7 +135,6 @@ button {
     width: 33.3333333%;
     display: inline-block;
     box-sizing: border-box;
-    height: 4em;
     float: left;
 }
 
@@ -165,6 +161,10 @@ button {
 .social h5 {
 	font: inherit;
 	font-size: 100%;
+}
+
+.icons {
+	padding: 0;
 }
 
 
