@@ -11,7 +11,7 @@ html {
 
 body {
     display: block;
-    background-color: LightGray;
+    background-color: #fff;
 }
 div {
     border: 1px solid Chocolate;
@@ -56,7 +56,6 @@ a:hover {
 }
 
 .content {
-	padding: 0 0.938rem;
 	margin: 0 auto;
 	min-width: 37.5rem;
 }
@@ -104,21 +103,97 @@ a:hover {
 	font-weight: 300;
 }
 
+.introduction {
+	text-align: center;
+}
+
 button {
+    background-color: #f15a29;
     margin: 0 auto;
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
     padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.content {
+	margin-top: 7.875rem;
+	color: #1d1e21;
+	text-align: center;
+	font: inherit;
 }
 
 .cases {
-	text-align: center;
+	padding-bottom: 5rem;
 }
-.cases .devices {
+
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+.content-icons {
     width: 33.3333333%;
     display: inline-block;
-    border: 1px solid black;
     box-sizing: border-box;
     height: 4em;
+    float: left;
+}
+
+.cases h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+/* Footer Section */
+
+.social {
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social hr {
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+
+.social h5 {
+	font: inherit;
+	font-size: 100%;
+}
+
+
+.social .icons > li {
+	border-radius: 1.25rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: inline-block;
+	border: 1px solid #eaebec;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0.625rem 0;
+	margin: 1.25rem 5px;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+
+.social .facebook {
+	color: #4c66a4;
+}
+
+.social .instagram {
+	color: #3f729b;
+}
+
+.copyright {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
 }
